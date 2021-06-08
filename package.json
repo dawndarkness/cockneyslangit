@@ -1,0 +1,26 @@
+{
+  "name": "cockneyslangit",
+  "description": "Do you speak British?",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawndarkness/cockneyslangit.git"
+  },
+  "author": "dawndarkness",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dawndarkness/cockneyslangit/issues"
+  },
+  "homepage": "https://github.com/dawndarkness/cockneyslangit#readme"
+}
