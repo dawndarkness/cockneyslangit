@@ -15,8 +15,8 @@ describe("cockneySlangIt", function() {
     const test2 = cockneySlangIt("I am married.");
     const test3 = cockneySlangIt('going to the bank');
 
-    // expect(test).to.equal("day's a dawning!");
-    // expect(test2).to.deep.equal("I am cut and carried.");
+    expect(test).to.equal("day's a-dawning!");
+    expect(test2).to.equal("I am cut and carried.");
     expect(test3).to.equal('going to the rattle and clank');
   });
 })

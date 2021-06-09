@@ -29,17 +29,29 @@ const cockney = {
 }
 
 function cockneySlangIt(string) {
+  let punctuationCheck = false;
+  const symbols = '/(?!\n|\r\n)[^a-zA-Z0-9]+/.'
+  for (let symbol of symbols) {
+    if (string[string.length-1].endsWith(symbol)){
+      punctuationCheck = true;
+    }
+  }
   if (typeof string !== "string") {
     throw new Error(
       "Invalid input. Please input a string."
     );
   } else {
     const wordArray = string.split(" ");
-    let result = [];
+    let temp = [];
+    let result;
     for (let element of wordArray) {
-    result.push(findWord(element));
+    temp.push(findWord(element));
     }
-    return result.join(' ');
+    result = temp.join(' ');
+    if (punctuationCheck === true) {
+      result += string[string.length-1];
+    }
+    return result;
   }
 }
 
