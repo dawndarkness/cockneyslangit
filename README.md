@@ -14,13 +14,13 @@ npm install cockneyslangit
 
 Next you can use it as follows;
 
-```
+```js
 const { cockney } = requre('cockneyslangit');
 ```
 
 ### Example;
 
-```
+```js
 //input
 cockney("I am married.")
 
