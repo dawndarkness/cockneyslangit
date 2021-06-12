@@ -2,12 +2,28 @@
 
 Do you speak British?
 
-This utility replaces English words with their cockney rhyming slang counterparts.
+This utility replaces English words with their **cockney rhyming slang** counterparts.
 
-For example;
+## Usage
 
-// I am married.
+To get started, please install this package;
 
-becomes
+```
+npm install cockneyslangit
+```
 
-// I am cut and carried.
+Next you can use it as follows;
+
+```
+const { cockney } = requre('cockneyslangit');
+```
+
+### Example;
+
+```
+//input
+cockney("I am married.")
+
+//becomes
+"I am cut and carried."
+```
