@@ -15,7 +15,7 @@ npm install cockneyslangit
 Next you can use it as follows;
 
 ```js
-const { cockney } = requre('cockneyslangit');
+const { cockney } = require('cockneyslangit');
 ```
 
 ### Example;
